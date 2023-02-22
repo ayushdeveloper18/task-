@@ -16,6 +16,10 @@
 		5F11DCC729A1420E0059917D /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F11DCC629A1420E0059917D /* TaskTests.swift */; };
 		5F11DCD129A1420E0059917D /* TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F11DCD029A1420E0059917D /* TaskUITests.swift */; };
 		5F11DCD329A1420E0059917D /* TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F11DCD229A1420E0059917D /* TaskUITestsLaunchTests.swift */; };
+		5F30E01E29A6787500972DF7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30E01D29A6787500972DF7 /* SignInViewController.swift */; };
+		5F30E02029A6789000972DF7 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30E01F29A6789000972DF7 /* OtpViewController.swift */; };
+		5F30E02229A678A200972DF7 /* OtpConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30E02129A678A200972DF7 /* OtpConfirmViewController.swift */; };
+		5F30E02429A678AE00972DF7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F30E02329A678AE00972DF7 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,12 @@
 		5F11DCCC29A1420E0059917D /* TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F11DCD029A1420E0059917D /* TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUITests.swift; sourceTree = "<group>"; };
 		5F11DCD229A1420E0059917D /* TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F11DCE129A157990059917D /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		5F11DCE229A157990059917D /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		5F30E01D29A6787500972DF7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5F30E01F29A6789000972DF7 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
+		5F30E02129A678A200972DF7 /* OtpConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpConfirmViewController.swift; sourceTree = "<group>"; };
+		5F30E02329A678AE00972DF7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,13 @@
 		5F11DCAE29A1420C0059917D /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				5F11DCE229A157990059917D /* Montserrat-Italic-VariableFont_wght.ttf */,
+				5F11DCE129A157990059917D /* Montserrat-VariableFont_wght.ttf */,
 				5F11DCAF29A1420C0059917D /* AppDelegate.swift */,
 				5F11DCB129A1420C0059917D /* SceneDelegate.swift */,
-				5F11DCB329A1420C0059917D /* ViewController.swift */,
-				5F11DCB529A1420C0059917D /* Main.storyboard */,
+				5F30E01B29A6781900972DF7 /* Views */,
+				5F30E01C29A6783600972DF7 /* Models */,
+				5F30E01A29A6780A00972DF7 /* Controllers */,
 				5F11DCB829A1420D0059917D /* Assets.xcassets */,
 				5F11DCBA29A1420D0059917D /* LaunchScreen.storyboard */,
 				5F11DCBD29A1420D0059917D /* Info.plist */,
@@ -125,6 +138,33 @@
 				5F11DCD229A1420E0059917D /* TaskUITestsLaunchTests.swift */,
 			);
 			path = TaskUITests;
+			sourceTree = "<group>";
+		};
+		5F30E01A29A6780A00972DF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F11DCB329A1420C0059917D /* ViewController.swift */,
+				5F30E01D29A6787500972DF7 /* SignInViewController.swift */,
+				5F30E01F29A6789000972DF7 /* OtpViewController.swift */,
+				5F30E02129A678A200972DF7 /* OtpConfirmViewController.swift */,
+				5F30E02329A678AE00972DF7 /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5F30E01B29A6781900972DF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F11DCB529A1420C0059917D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F30E01C29A6783600972DF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F30E02029A6789000972DF7 /* OtpViewController.swift in Sources */,
+				5F30E01E29A6787500972DF7 /* SignInViewController.swift in Sources */,
 				5F11DCB429A1420C0059917D /* ViewController.swift in Sources */,
+				5F30E02229A678A200972DF7 /* OtpConfirmViewController.swift in Sources */,
+				5F30E02429A678AE00972DF7 /* ProfileViewController.swift in Sources */,
 				5F11DCB029A1420C0059917D /* AppDelegate.swift in Sources */,
 				5F11DCB229A1420C0059917D /* SceneDelegate.swift in Sources */,
 			);
